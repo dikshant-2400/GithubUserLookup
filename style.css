@@ -1,5 +1,5 @@
 body {
-    background-color: #212121;
+    background-color: #9C9A9A;
     color: aliceblue;
     font-family: Arial, sans-serif;
     display: flex;
@@ -51,6 +51,7 @@ body {
     font-size: 11px;
     margin: 3px 0;
 }
+<<<<<<< HEAD
 
 .profile-link {
     color: inherit;
@@ -81,3 +82,5 @@ body {
     color: #58a6ff;
     text-decoration: underline;
 }
+=======
+>>>>>>> 6aeb0868f6dccc34aad6b8a74e42db2551ddfa4a
