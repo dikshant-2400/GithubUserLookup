@@ -10,6 +10,9 @@ A simple web application that searches GitHub users in real time using the GitHu
 - **Error Handling:** Displays appropriate messages when a user is not found or a request fails.
 - **Responsive Layout:** Uses a clean, centered dark-themed interface.
 - **Input Validation:** Hides the profile card when the input is empty.
+- **Clickable Profile Links:** Click the user's avatar, name, or username to open their GitHub profile in a new tab.
+- **Clickable Repository Link:** Click the public repository count to view the user's GitHub repositories in a new tab.
+- **Hover Effects:** Highlights clickable profile elements and repository links when hovering over them.
 
 ## Technologies Used
 
@@ -28,6 +31,8 @@ A simple web application that searches GitHub users in real time using the GitHu
 3. JavaScript sends a request to the GitHub API.
 4. The application displays the user's profile information.
 5. If the username does not exist or the request fails, an error message is displayed.
+6. Click the profile image, name, or username to open the GitHub profile in a new tab.
+7. Click the public repository count to open the user's repositories in a new tab.
 
 ## API Used
 
@@ -54,3 +59,5 @@ Example: https://api.github.com/users/cat
 - `async/await` and error handling
 - Template literals
 - Dynamic HTML rendering
+- Opening external links in new tabs
+- CSS hover effects and transitions
