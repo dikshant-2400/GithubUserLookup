@@ -32,11 +32,22 @@ async function fetchUserData(username) {
     const data = await response.json();
 
     userCard.innerHTML = `
+    <a href="${data.html_url}" target="_blank" rel="noopener noreferrer" class="profile-link">
       <img src="${data.avatar_url}" alt="${data.name || data.login}" />
       <h2>${data.name || data.login}</h2>
       <p>@${data.login}</p>
-      <p>${data.bio || "No bio available."}</p>
-      <p><strong>Public Repos:</strong> ${data.public_repos}</p>
+    </a>
+    <p>${data.bio || "No bio available."}</p>
+    <p>
+      <strong>
+        <a href="${data.html_url}?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="repo-link">
+          Public Repos: ${data.public_repos}
+        </a>
+      </strong>
+    </p>
     `;
     userCard.style.display = "block";
   } catch (error) {
